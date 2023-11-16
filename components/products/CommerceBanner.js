@@ -31,12 +31,10 @@ function Banner() {
           {stores.map((store) => (
             <div key={store.id} className="flex-shrink-0 mx-3 max-w-full">
               <Link href={`/commerce/${store.id}`}>
-                <a>
-                  <div className="bg-white relative h-auto lg:w-48 border-2 border-gray-200 shadow-lg rounded-lg group-hover:opacity-75 sm:h-64 transition-transform duration-300 transform origin-center hover:scale-110">
+                    <div className="bg-white relative h-auto lg:w-48 border-2 border-gray-200 shadow-lg rounded-lg group-hover:opacity-75 sm:h-64 transition-transform duration-300 transform origin-center hover:scale-110">
                     <img src={store.logo} alt={store.name} className="rounded" />
                     <h1 className="flex justify-center mt-4 font-primary">{store.name}</h1>
                   </div>
-                </a>
               </Link>
             </div>
           ))}
